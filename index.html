@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Desarrollo de Aplicaciones 1</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+
+<!-- LOGO CAMBIADO A logo.png -->
+<img src="logo.png" class="logo-u">
+
+<span>Rafael Max</span>
+
+</div>
+
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#hit">HIT</a></li>
+<li><a href="#github">HIT HUB</a></li>
+<li><a href="#temas">Semanas</a></li>
+<li><a href="#habilidades">Habilidades</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="inicio" class="hero">
+
+<h1>Desarrollo de Aplicaciones 1</h1>
+
+<p class="descripcion">
+
+Este curso de Desarrollo de Aplicaciones 1 introduce los fundamentos
+de programación, lógica computacional y resolución de problemas.
+Durante el desarrollo del curso se aplican conocimientos en la
+creación de algoritmos, manejo de datos y desarrollo de programas
+funcionales que fortalecen las habilidades tecnológicas del estudiante.
+
+</p>
+
+<button class="btn"
+onclick="document.getElementById('temas').scrollIntoView()">
+
+Comenzar Curso
+
+</button>
+
+</section>
+
+<!-- HIT -->
+
+<section id="hit">
+
+<h2>HIT</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="hit.jpg" class="img-card">
+
+<h3>Introducción HIT</h3>
+
+<p>
+
+HIT representa herramientas tecnológicas que permiten mejorar el
+aprendizaje digital y fortalecer las competencias en programación
+y desarrollo de software.
+
+</p>
+
+<a href="https://www.ejemplo.com"
+target="_blank"
+class="btn-doc">
+
+Visitar HIT
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HIT HUB -->
+
+<section id="github">
+
+<h2>HIT HUB</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="github.jpg" class="img-card">
+
+<h3>GitHub</h3>
+
+<p>
+
+GitHub permite almacenar proyectos, controlar versiones y compartir
+código con otros desarrolladores.
+
+</p>
+
+<a href="https://github.com/"
+target="_blank"
+class="btn-doc">
+
+Ir a GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SEMANAS -->
+
+<section id="temas">
+
+<h2>Semanas del Curso</h2>
+
+<div class="cards">
+
+<div class="card" onclick="abrirModal('modal1')">
+
+<img src="semana1.jpg" class="img-card">
+
+<h3>Semana 1</h3>
+
+<p>Variables y tipos de datos</p>
+
+</div>
+
+<div class="card" onclick="abrirModal('modal2')">
+
+<img src="semana2.jpg" class="img-card">
+
+<h3>Semana 2</h3>
+
+<p>Estructuras condicionales</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MODALES -->
+
+<div id="modal1" class="modal">
+
+<div class="modal-content">
+
+<span class="cerrar"
+onclick="cerrarModal('modal1')">
+&times;
+</span>
+
+<h2>Semana 1</h2>
+
+<img src="semana1.jpg" class="modal-img">
+
+<p>
+
+En esta semana se estudian los conceptos básicos
+de variables y tipos de datos.
+
+</p>
+
+<a href="semana1.pdf"
+target="_blank"
+class="btn-doc">
+
+Ver Documento
+
+</a>
+
+</div>
+
+</div>
+
+<div id="modal2" class="modal">
+
+<div class="modal-content">
+
+<span class="cerrar"
+onclick="cerrarModal('modal2')">
+&times;
+</span>
+
+<h2>Semana 2</h2>
+
+<img src="semana2.jpg" class="modal-img">
+
+<p>
+
+Uso de estructuras condicionales
+para la toma de decisiones.
+
+</p>
+
+<a href="semana2.pdf"
+target="_blank"
+class="btn-doc">
+
+Ver Documento
+
+</a>
+
+</div>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function abrirModal(id){
+document.getElementById(id).style.display="flex";
+}
+
+function cerrarModal(id){
+document.getElementById(id).style.display="none";
+}
+
+</script>
+
+</body>
+</html>
